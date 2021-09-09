@@ -1,0 +1,282 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* @media screen { */
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.welcome-heading h1,
+h4 {
+  text-align: center;
+  background-color: teal;
+  color: white;
+  padding: 0.5em;
+}
+
+.cv-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: lightseagreen;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.cv-form input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 90%;
+  font-size: 1.5em;
+  margin: 0.5em;
+  padding: 0.2em;
+}
+
+textarea {
+  resize: none;
+}
+
+/* ==================================================================== */
+
+.cv-header {
+  width: 100%;
+  display: flex;
+  background-color: skyblue;
+  justify-content: space-between;
+}
+
+.name-container,
+.img-container {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container img {
+  border-radius: 50%;
+}
+
+.cv-header .fname h2 {
+  position: absolute;
+  right: 1em;
+  top: 48%;
+}
+
+.cv-header .lname h2 {
+  position: absolute;
+  left: 1em;
+  top: 48%;
+}
+
+.sum-addr-container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1em;
+  color: gray;
+}
+
+.sum-addr-container h1 {
+  color: black;
+}
+
+.summary {
+  width: 60%;
+  padding: 1em;
+  text-align: center;
+  overflow: hidden;
+  /* background-color: aqua; */
+}
+
+/* .summary > h1 {
+  color: white;
+} */
+
+.summary p {
+  text-align: center;
+  padding: 1em 2em 2em 1em;
+  /* color: white; */
+  letter-spacing: 2px;
+}
+
+.addr-info {
+  width: 40%;
+  padding: 1em;
+  /* background-color: aqua; */
+  text-align: center;
+  /* color: white; */
+}
+
+.contact-info {
+  padding: 0.5em 2em;
+  text-align: left;
+}
+
+.ca-ed-container {
+  width: 100%;
+  display: flex;
+}
+
+.career-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  /* border: 1px solid blue; */
+}
+
+.career-list {
+  display: flex;
+  /* border-bottom: 1px solid gray; */
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+.career-list::before {
+  content: "";
+  position: absolute;
+  width: 10em;
+  bottom: 0;
+  border-bottom: 1px solid gray;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.career-date {
+  width: 20%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.career-date h3 {
+  color: lightseagreen;
+}
+
+.ca-header {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+
+.ca-header h2 {
+  color: lightseagreen;
+}
+
+.ca-description p {
+  color: gray;
+  font-style: italic;
+  text-align: center;
+}
+
+.ca-description {
+  margin-bottom: 1em;
+}
+
+.career-detail {
+  width: 60%;
+}
+
+.edu-skill-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.edu-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-info-container .edu-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.edu-info-container .edu-info h4 {
+  background-color: white;
+  color: teal;
+}
+
+.edu-info-container .edu-info h4:first-child {
+  width: 40%;
+  text-align: left;
+}
+
+.edu-info-container .edu-info p {
+  width: 60%;
+  color: gray;
+}
+
+.skill-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.skill-detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2em;
+}
+
+.skill-detail h4 {
+  color: black;
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: skyblue;
+  padding: 1em;
+}
+
+/* } */
+/* end of the media screen */
+
+/* 
+@media print {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .cv-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cv-header img {
+    width: 100px;
+    height: 100px;
+  }
+}
+end of the print */
